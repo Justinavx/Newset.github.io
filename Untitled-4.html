@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise</title>
+	<!-- Link TO CSS -->
+	<link rel="stylesheet" href="Style.css">
+	<style>*{
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-padding-top: 4rem;
+	scroll-behavior: smooth;
+	lsit-style: none;
+	text-dexoration: none;	
+	
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+ border-radius: 20px;
+	display: flex;
+  width: auto;
+	bottom:20px;
+	height: auto;
+  border: 1px solid white;
+  opacity: 0.6;
+
+}
+
+
+div.transbox1 {
+  margin: 30px;
+  background-color: #ffffff;
+ border-radius: 20px;
+	display: flex;
+  width: auto;
+	bottom:20px;
+	height: auto;
+  border: 1px solid white;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #0000-00;
+}
+:root{
+	--main-color:#bc9967;
+	--second-color:#edeae3;
+	--text-color:#1b1b1b;
+	--bg-color:#fff;
+	background: black;
+}
+section{
+	padding: 50px 100px;
+}
+img {
+	width: 100%;
+}
+body {
+	color:var(--text-color);
+
+}
+header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 100px;
+	transition: 0.5s linear;
+	background:#000000;
+}
+.logo img{
+	width: 60px;
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	padding: 8px 17px;
+	
+	color:aliceblue;
+	font-size:1rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar a:hover{
+	background:#B37641;
+	border-radius: 0.2rem;
+	transition: 0.2s all linear;
+}
+.header-icon{
+	font-size: 22px;
+	cursor: pointer;
+	z-index: 10000;
+	display: flex;
+	column-gap: 0.8rem;
+}
+.header-icon .bx{
+	color:aliceblue;
+}
+.header-icon .bx:hover{
+	color:#B37641;
+}
+#menu-icon{
+	color:aliceblue;
+	font-size: 24px;
+	z-index: 100001;
+	cursor: pointer;
+}
+.search-box{
+	position:absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	background:#AD724F;
+	width: 100%;
+}
+.search-box input{
+	padding: 20px;
+	border:none;
+	outline:#622A00;
+	width: 100%;
+	font-size: 1rem;
+	color:#662F00;
+}
+.search-box input::placeholder{
+	font-size: 1rem;
+	font-weight: 500;
+	
+}
+.home{
+	width: 100%;
+	height: 50%;
+	min-height:100vh;
+	background: url("Unnamed Site 2/img_article1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	
+	grid-template-columns: repeat(auto-fit,minimax(17rem,auto));
+	align-items: center;
+	text-align: center;
+
+	gap: 1.5rem;
+}
+
+.home h1{
+	width: 100%;
+	height:50%;
+	min-height:100vh;
+	background: url("main_images.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	background: -webkit-linear-gradient(grey,black);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	grid-template-columns: repeat(auto-fit,minimax(17rem,auto));
+	align-items: center;
+	text-align: center;
+
+	gap: 1.5rem;
+}
+
+
+.home1{
+	width: 100%;
+	min-height:100vh;
+	background: url("main_images.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	background-image: url("Unnamed Site 2/img_article1.jpg");
+	grid-template-columns: repeat(auto-fit,minimax(17rem,auto));
+	align-items: center;
+	text-align: center;
+
+	gap: 1.5rem;
+}
+.home-text h1 {
+	font-size: 3.4rem;
+	color:#662F00;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.home-text p {
+	font-size: 0.938rem;
+	color:#FFFFFF;
+	margin: 0.5rem 0 1.4rem;
+}
+
+.btn:hover {
+	background: #B37641;
+}
+.about{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minimax(17rem,auto));
+	gap: 1.5rem;
+}
+.about-img img{
+	border-radius: 0.5rem;
+}
+.about-text h2{
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+.about-text p{
+	font-size:0.938rem;
+	margin: 0.5rem 0 1.1rem;
+}
+.heading{
+	text-align: center;
+}
+.heading-text h2{
+	font-size: 1.8rem;
+	text-transform: uppercase;	
+}
+.heading-text p{
+	font-size:0.938rem;
+	margin: 0.5rem 0 1.1rem;
+	
+}
+	</style>
+	<!-- Box Icons -->
+	<link rel="stylesheet"
+  	href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="Unnamed Site 2/Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<!-- Navbar -->
+	<header>
+		<!-- links -->
+		<ul class="navbar">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#articles">Articles</a>
+			<a href="#contact">Contact</a>
+		</ul>
+	</header>
+	
+	<!-- Home -->
+	<section class="home1">
+		<div class="home">
+		<div class="headings2">
+			
+			<h1 style="font-size-adjust: auto; font-size: 75px; top: 30px;  ">Ultimate Web<br> Design Workspace for Photoshop</h1>
+			</div>
+			
+				<div class="background">
+  <div class="transbox">
+		<p style="position: relative; bottom: 20px;">In this post, I outline how I have personally set up my web design workspace and why I have found it to be the most productive layout for producing web work since I’ve started using Photoshop. Take note that I am using a 27″ monitor at 2560×1440 resolution though this layout should work on monitors 17″ and up.</p> <a href="#" class="btn" style="display: grid; width: 50px; text-align: center; margin-bottom: auto; margin-right: 200; margin-top: auto; " >Find Out</a>
+			</div>
+					
+		  </div>
+			 
+	  </div>
+		<br><br>
+	</section>
+	
+	<!-- About -->
+	<section class="about" id="about">
+		<div class="about-img"> </div>
+		<div class="about-text">
+
+			<p>&nbsp;</p>
+			<h3 style="color: aliceblue">Download</h3>
+			<p style="color: antiquewhite">You can download the workspace here. Detailed instructions for installation can be found in the link above or in short, below. Note that this file was made in CS4 but it seems to work in newer and older versions, even though it gives a message saying otherwise.</p>
+			<a href="#" class="btn" style="color: #753F00; text-align: center" >download</a>
+			</div>
+			<hr style="color: #A86300">
+		</div>
+	</section>
+	<!-- Articles -->
+	<section class="articles" id="articles">
+		<div class="heading-img">
+			<img src="Unnamed Site 2/ste-neon.jpg" alt="">
+		</div>
+		<div class="heading-text">
+			<h2 style="color: aliceblue;  text-align: right">Document Set Up</h2>
+			<p style="color: antiquewhite; text-align: right" >This is where the magic happens, the blank canvas. I usually start with the 960 GS and set the width at 1400 pixels. The main Photoshop tools are still on the left (by default) with the canvas in the middle and the other windows on the right of the screen.</p>
+		</div>
+	</section>
+	<hr style="color: #A86300">
+	<section class="article" id="article">
+		<div class="article-img">
+			<img src="Unnamed Site 2/img_article2.jpg" alt="">
+		</div>
+		<div class="heading-text">
+			<h2 style="color: aliceblue">Layer Comps</h2>
+			<p style="color: antiquewhite">If you’re not using Layer Comps already and you’re working as a designer, you’re mind is about to be blown. This isn’t the place to give a tutorial on them but having them in your workflow is pretty much essential, as it saves hours of time. Layer Comps are also very handy for putting together a presentations via the ‘Export Layer Comps’ script.</p>
+		</div>
+	</section>
+	
+	<!-- Contact -->
+	<section class="contact" id="contact">
+		<div class="contact-img"> </div>
+		<div class="contact-text">
+			
+			<h2 style="color: aliceblue">More Photoshop Tips and Tricks</h2>
+			<h3 style="color: aliceblue" align="right">here are some links you can visit.</h3>
+			<div class="background">
+  <div class="transbox">
+			<p><a href="https://www.google.com/url?q=http://justcreative.com/2012/04/17/2010/09/21/photoshop-dreamweaver-tips/&sa=D&source=docs&ust=1685297221996488&usg=AOvVaw3tvUdJX51Im_f5iTkZK90i" >Tips for Working with Photoshop and Dreamweaver</a></p>
+			<p><a href="https://justcreative.com/photoshop-illustrator-tips/" >Tips for Working with Photoshop and Illustration</a></p>
+			<p><a href="https://justcreative.com/photoshop-indesign-tips/" >Tips for Working with Photoshop and InDesign</a></p>
+			<p><a href="https://justcreative.com/adobe-cs-review/" >Speed up Photoshop Projects using Adobe CS Review</a></p>
+		</div>
+				</div>
+				</div>
+	</section>
+	<hr style="color: #A86300">
+	<!-- Copyright -->
+	<div class="copyright-text" style="color: aliceblue">
+		<br>
+		<p style="color: antiquewhite"><center>Copyright © 2018 Adobe. All rights reserved</center></p>
+		<p style="color: white"><center>Privacy<ul></ul>Cookies<ul></ul>Terms of Use</center></p>
+
+		<br><br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Link To JS -->
+	<script src="main.js"></script>
+</body>
+</html>
